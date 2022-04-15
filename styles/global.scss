@@ -1,0 +1,30 @@
+// Colors:
+$primary: #E71D36;
+$dark: #141414;
+$white: #FDFFFC;
+
+// Sizes:
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 3.6rem;
+
+// Fonts:
+$family-primary: 'Montserrat', sans-serif;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import '~bulma/bulma', '~bulma/sass/grid/columns.sass', '~bulma/sass/layout/section.sass', '~bulma/sass/layout/footer.sass'

@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import Stats from './Stats'
 import data from '../../data/stats.json'
 
@@ -8,7 +7,7 @@ const Headline: NextPage = () => {
     <>
       <section className="hero is-link is-fullheight-with-navbar has-background-white">
         <div className="hero-body">
-          <div className="columns is-vcentered">
+          <div className="columns is-vcentered is-justify-content-flex-end">
             <div className="column is-full">
               <h1 className="title is-size-1 has-text-black has-text-centered">
                Procurando um desenvolvedor para o seu projeto ou quer ser notado por algum recrutador?

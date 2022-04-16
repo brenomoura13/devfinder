@@ -1,8 +1,7 @@
-import type { NextComponentType } from 'next'
 import React, { useEffect, useState } from 'react'
 
-const Stats: NextComponentType = props => {
-  const {label, number, duration } = props.data
+const Stats = (props: { data: { label: string; number: string; duration: string } }) => {
+  const { label, number, duration } = props.data
   const [count, setCount] = useState("0")
 
   useEffect(() => {

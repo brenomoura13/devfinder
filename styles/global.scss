@@ -7,16 +7,17 @@ $white: #FDFFFC;
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 3.6rem;
 $dimensions: 16 24 32 48 64 96 128 256 512 1024 2048 4096 8192 16384 32768 65536;
+$footer-padding: 1.2rem;
 
 // Fonts:
-$family-sans-serif: 'Montserrat', sans-serif;
+$family-primary: 'Montserrat', sans-serif;
+$family-secondary: 'Lato', sans-serif;
+$family-code: 'Akshar', monospace;
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {

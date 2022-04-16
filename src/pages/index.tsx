@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import Footer from '../components/Footer'
 import Headline from '../components/Headline'
 import Nav from '../components/Nav'
+import VideoSection from '../components/VideoSection'
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +14,8 @@ const Home: NextPage = () => {
       />
       <Nav />
       <Headline />
+      <VideoSection />
+      <Footer />
     </>
   )
 }

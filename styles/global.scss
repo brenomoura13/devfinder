@@ -1,7 +1,9 @@
 // Colors:
-$primary: #E71D36;
+$primary: #7623d4;
+$light: #b274f8;
 $dark: #141414;
 $white: #FDFFFC;
+$border-hover: $light;
 
 // Sizes:
 $navbar-height: 5rem;
@@ -27,6 +29,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid $primary;
 }
 
 @import '~bulma/bulma', '~bulma/sass/grid/columns.sass', '~bulma/sass/layout/section.sass', '~bulma/sass/layout/footer.sass', '~bulma-spacing/bulma-spacing';

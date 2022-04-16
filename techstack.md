@@ -11,4 +11,4 @@
 # • Montserrat e Lato - Principais
 # • Saira - Ilustrações
 # • Satisfy - Caligrafia
-# • Major Mono - Tecnologica
+# • Akshar - Tecnologica

@@ -7,13 +7,13 @@ const Nav: NextPage = () => {
   const { width } = useWindowDimensions()
   let isTouchDevice:boolean = width < 1023 && width != 0 ? true : false;
   let logo:string = isTouchDevice ? "df-logo.png" : "df-escrito.png"
-  let logoWidth:number = isTouchDevice ? 68 : 200
-  let logoHeight:number = isTouchDevice ? 68 : 64
+  let logoWidth:number = isTouchDevice ? 320 : 1089
+  let logoHeight:number = isTouchDevice ? 188 : 348
   return (
-    <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <Link href="/" passHref>
-          <a className="navbar-item is-large">
+    <nav className="navbar is-white" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand is-white">
+        <Link href="/">
+          <a className="navbar-item is-link is-light">
             <Image src={`/assets/images/${logo}`} width={logoWidth} height={logoHeight} alt="DevFinder Logo" />
           </a>
         </Link>
@@ -27,13 +27,13 @@ const Nav: NextPage = () => {
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
           <Link href="/">
-            <a className="navbar-item">
+            <a className="navbar-item is-link is-light">
               Home
             </a>
           </Link>
 
           <Link href="/">
-            <a className="navbar-item">
+            <a className="navbar-item is-link is-light">
               Sobre
             </a>
           </Link>
@@ -47,7 +47,7 @@ const Nav: NextPage = () => {
                 </a>
               </Link>
               <Link href="/">
-                <a className="button is-light">
+                <a className="button has-text-black is-inverted is-small">
                   Login
                 </a>
               </Link>

@@ -18,11 +18,10 @@ const Stats = (props: { data: { label: string; number: string; duration: string 
 
   }, [number, duration]);
   return (
-    <div className="level-item has-text-centered has-text-black">
-
+    <div className="level-item has-text-centered has-text-white">
       <div>
-        <p className="heading has-text-black">{label}</p>
-        <p className="title has-text-primary">{count.toLocaleString()}</p>
+        <p className="heading has-text-white">{label}</p>
+        <p className="title has-text-light">{count.toLocaleString()}</p>
       </div>
     </div>
   )

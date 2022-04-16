@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import Head from 'next/head'
-import Image from 'next/image'
 import Headline from '../components/Headline'
 import Nav from '../components/Nav'
 

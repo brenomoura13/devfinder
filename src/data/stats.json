@@ -1,0 +1,22 @@
+{
+  "counts": [
+    {
+      "id": "001",
+      "label": "Desenvolvedores",
+      "number": "30800",
+      "duration": "2"
+    },
+    {
+      "id": "002",
+      "label": "Recrutadores",
+      "number": "5900",
+      "duration": "2"
+    },
+    {
+      "id": "003",
+      "label": "Contratados",
+      "number": "29390",
+      "duration": "2"
+    }
+  ]
+}

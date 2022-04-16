@@ -6,9 +6,10 @@ $white: #FDFFFC;
 // Sizes:
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 3.6rem;
+$dimensions: 16 24 32 48 64 96 128 256 512 1024 2048 4096 8192 16384 32768 65536;
 
 // Fonts:
-$family-primary: 'Montserrat', sans-serif;
+$family-sans-serif: 'Montserrat', sans-serif;
 
 html,
 body {
@@ -27,4 +28,4 @@ a {
   box-sizing: border-box;
 }
 
-@import '~bulma/bulma', '~bulma/sass/grid/columns.sass', '~bulma/sass/layout/section.sass', '~bulma/sass/layout/footer.sass'
+@import '~bulma/bulma', '~bulma/sass/grid/columns.sass', '~bulma/sass/layout/section.sass', '~bulma/sass/layout/footer.sass', '~bulma-spacing/bulma-spacing';

@@ -952,6 +952,11 @@
   "resolved" "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz"
   "version" "3.0.0"
 
+"bulma-spacing@^2.1.5":
+  "integrity" "sha512-LVbfwFoHqFb073pS7sRYBaSMOHIg7YBZ9YPxq1IcXFUyDck13keais5LX2WOEuH9lvPM8ifwVW39dYS5xbOkVA=="
+  "resolved" "https://registry.npmjs.org/bulma-spacing/-/bulma-spacing-2.1.5.tgz"
+  "version" "2.1.5"
+
 "bulma@^0.9.3":
   "integrity" "sha512-0d7GNW1PY4ud8TWxdNcP6Cc8Bu7MxcntD/RRLGWuiw/s0a9P+XlH/6QoOIrmbj6o8WWJzJYhytiu9nFjTszk1g=="
   "resolved" "https://registry.npmjs.org/bulma/-/bulma-0.9.3.tgz"

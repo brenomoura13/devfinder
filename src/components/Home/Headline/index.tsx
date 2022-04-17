@@ -22,7 +22,7 @@ const Headline: NextPage = () => {
                 Nos deixe te ajudar! Realize seu <b className="has-background-light has-padding-3 is-underlined">registro</b> para aumentar suas chances de sucesso.
               </h2>
               <div data-aos="fade-up" className="column">
-                <h2 className="subtitle is-size-4 has-text-white has-text-centered has-margin-top-30">Nossos números:</h2>
+                <h2 className="subtitle is-size-4 has-text-white has-text-centered has-margin-top-30">Junte-se a nossa plataforma e faça parte das estatisticas:</h2>
                 <nav className="level has-text-white is-flex-direction-row">
                   {data.counts.map(count => <Stats key={count.id} data={count}/>)}
                 </nav>

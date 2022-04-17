@@ -1,30 +1,33 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const Nav: NextPage = () => {
+  const [isBurger, setIsBurger] = useState(false);
+  const isBurgerActive = isBurger ? "is-active" : "";
   const { width } = useWindowDimensions()
   let isTouchDevice:boolean = width < 1023 && width != 0 ? true : false;
   let logo:string = isTouchDevice ? "df-logo.png" : "df-escrito.png"
   let logoWidth:number = isTouchDevice ? 320 : 1089
   let logoHeight:number = isTouchDevice ? 188 : 348
   return (
-    <nav className="navbar is-white" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand is-white">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand is-justify-content-center">
         <Link href="/">
-          <a className="navbar-item is-link is-light">
+          <a className="navbar-item">
             <Image src={`/assets/images/${logo}`} width={logoWidth} height={logoHeight} alt="DevFinder Logo" />
           </a>
         </Link>
-        <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+        <a role="button" onClick={() => setIsBurger(!isBurger)} className={`navbar-burger ` + isBurgerActive} aria-label="menu" aria-expanded="false" data-target="navbar">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbar" className="navbar-menu">
+      <div id="navbar" className={`navbar-menu ` + isBurgerActive}>
         <div className="navbar-start">
           <Link href="/">
             <a className="navbar-item is-link is-light">

@@ -5,56 +5,32 @@ export default function PartnerImages() {
       {
         name: 'Name',
         img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
+        width: 256/2,
+        height: 256/2
       },
       {
         name: 'Name',
         img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
+        width: 256/2,
+        height: 256/2
       },
       {
         name: 'Name',
         img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
+        width: 256/2,
+        height: 256/2
       },
       {
         name: 'Name',
         img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
-      },
-      {
-        name: 'Name',
-        img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
-      },
-      {
-        name: 'Name',
-        img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
-      },
-      {
-        name: 'Name',
-        img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
-      },
-      {
-        name: 'Name',
-        img: 'your-logo.png',
-        width: 512/2,
-        height: 512/2
+        width: 256/2,
+        height: 256/2
       },
     ]
 
     return (
     <>
-      <div className="columns is-centered is-half">
+      <div className="columns is-vcentered is-mobile is-flex-wrap-wrap">
         {
           partners.map(({ name, img, width, height }) => (
             <div className="column" key={name}>
@@ -63,7 +39,6 @@ export default function PartnerImages() {
          ))
         } 
       </div>
-      <p className="subtitle is-size-6 has-text-white has-text-centered">Caso tenha interesse em aparecer aqui, entre em contato conosco através <b className="has-text-light is-underlined">deste link.</b></p>
     </>
   )
 }

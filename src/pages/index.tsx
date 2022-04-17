@@ -5,6 +5,7 @@ import Headline from '../components/Home/Headline'
 import Nav from '../components/Nav'
 import Partners from '../components/Home/Partners'
 import VideoSection from '../components/Home/VideoSection'
+import Considerations from '../components/Home/Considerations'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Headline />
       <VideoSection />
       <Partners />
+      <Considerations />
       <Footer />
     </>
   )

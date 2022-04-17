@@ -7,7 +7,10 @@ const nextConfig = {
   trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-  }
+  },
+  images: {
+    domains: ['bulma.io'],
+  },
 }
 
 module.exports =

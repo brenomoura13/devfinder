@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import type { NextPage } from 'next'
 import Aos from 'aos'
 import { useEffect } from 'react'
-import { faBrain } from '@fortawesome/free-solid-svg-icons'
 
 const Footer: NextPage = () => {
   useEffect(() => {

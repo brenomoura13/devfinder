@@ -45,7 +45,7 @@ const Nav: NextPage = () => {
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
-            <div className="buttons is-justify-content-center">
+            <div className="buttons has-addons is-justify-content-center">
               <Link href="/" passHref>
               <button className="button is-primary has-text-light is-small">
                 <span className="icon is-small">

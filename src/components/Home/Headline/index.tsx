@@ -23,9 +23,11 @@ const Headline: NextPage = () => {
               </h2>
               <div data-aos="fade-up" className="column">
                 <h2 className="subtitle is-size-4 has-text-white has-text-centered has-margin-top-30">Junte-se a nossa plataforma e faça parte das estatisticas:</h2>
-                <nav className="level has-text-white is-flex-direction-row">
-                  {data.counts.map(count => <Stats key={count.id} data={count}/>)}
-                </nav>
+                <div className="column is-offset-one-quarter is-half">
+                  <nav className="level has-text-white is-flex-direction-row">
+                    {data.counts.map(count => <Stats key={count.id} data={count}/>)}
+                  </nav>
+                </div>
               </div>
             </div>
           </div>

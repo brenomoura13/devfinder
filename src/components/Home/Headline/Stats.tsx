@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import React, { useEffect, useState } from 'react'
 
 const Stats = (props: { data: { label: string; number: string; duration: string } }) => {
@@ -21,7 +22,7 @@ const Stats = (props: { data: { label: string; number: string; duration: string 
     <div className="level-item has-text-centered has-text-white">
       <div>
         <p className="heading has-text-white">{label}</p>
-        <p className="title has-text-light">{count.toLocaleString()}</p>
+        <p className="title has-text-light">{count}</p>
       </div>
     </div>
   )

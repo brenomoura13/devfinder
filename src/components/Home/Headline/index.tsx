@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Stats from './Stats'
-import data from '../../data/stats.json'
+import data from '../../../data/stats.json'
 import Aos from 'aos'
 import { useEffect } from 'react'
 

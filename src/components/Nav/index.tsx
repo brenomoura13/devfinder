@@ -46,6 +46,7 @@ const Nav: NextPage = () => {
                   <strong>Registrar</strong>
                 </a>
               </Link>
+              <p className="is-size-8">ou </p>
               <Link href="/">
                 <a className="button has-text-black is-inverted is-small">
                   Login

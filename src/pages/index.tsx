@@ -1,20 +1,22 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Footer from '../components/Footer'
-import Headline from '../components/Headline'
+import Headline from '../components/Home/Headline'
 import Nav from '../components/Nav'
-import VideoSection from '../components/VideoSection'
+import Partners from '../components/Home/Partners'
+import VideoSection from '../components/Home/VideoSection'
 
 const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title='Home | DevFinder - Encontre o seu dev favorito'
+        title='Home | DevFinder'
         description="Um portal de desenvolvedores para recrutadores."
       />
       <Nav />
       <Headline />
       <VideoSection />
+      <Partners />
       <Footer />
     </>
   )

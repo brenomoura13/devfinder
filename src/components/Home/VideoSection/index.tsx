@@ -23,19 +23,19 @@ const Footer: NextPage = () => {
             <p data-aos="fade-right" className="subtitle is-size-4">Explore ao máximo nossa plataforma para conseguir se destacar entre as empresas ou candidatos.</p>
             <div className="columns is-align-items-stretch">
               <div className="column">
-                <div data-aos="zoom-in-up" className="box">
+                <div data-aos="zoom-in-up" className="box has-border">
                   <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 is-underlined"><FontAwesomeIcon icon={faShield} className="has-margin-right-10"/>Confiabilidade</h2>
                   <p className="is-size-6">Aqui nós garantimos que toda e qualquer informação sensível é guardada em <b className="has-text-primary">7 chaves</b>.</p>
                 </div>               
               </div>
               <div className="column">
-                <div data-aos="zoom-in-up" className="box">
+                <div data-aos="zoom-in-up" className="box has-border">
                   <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5"><FontAwesomeIcon icon={faCircleNodes} className="has-margin-right-10"/>Conectividade</h2>
                   <p className="is-size-6">De uma ponta a outra, conecte-se e converse com <b className="has-text-primary">recrutadores</b> e <b className="has-text-primary">desenvolvedores</b> do Brasil todo.</p>
                 </div>
               </div>
               <div className="column">
-                <div data-aos="zoom-in-up" className="box">
+                <div data-aos="zoom-in-up" className="box has-border">
                   <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5"><FontAwesomeIcon icon={faHandshakeAngle} className="has-margin-right-10"/>Acessibilidade</h2>
                   <p className="is-size-6">Plataforma desenvolvida pensando em <b className="has-text-primary">todos</b>, com funções especiais para pessoas <b className="has-text-primary">PCD</b>.</p>
                 </div>

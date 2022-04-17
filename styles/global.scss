@@ -31,8 +31,9 @@ a {
   box-sizing: border-box;
 }
 
-.box {
+.has-border {
   border: 1px solid $primary;
 }
+
 
 @import '~bulma/bulma', '~bulma/sass/grid/columns.sass', '~bulma/sass/layout/section.sass', '~bulma/sass/layout/footer.sass', '~bulma-spacing/bulma-spacing';

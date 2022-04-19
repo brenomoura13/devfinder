@@ -9,7 +9,7 @@ const Partners: NextPage = () => {
   }, [])
   return (
     <>
-      <h1 className="is-size-1 is-family-code is-uppercase has-background-primary has-text-white has-text-centered is-underlined has-padding-20 has-text-weight-bold">Empresas homologadas</h1>
+      <h1 className="is-size-1 is-size-3-mobile  is-family-code is-uppercase has-background-primary has-text-white has-text-centered is-underlined has-padding-20 has-text-weight-bold">Empresas homologadas</h1>
       <section className="section is-medium has-background-dark is-align-items-center">
         <div className="columns is-flex-direction-column is-align-items-center">
           <div data-aos="zoom-in-up" className="column is-justify-content-center">

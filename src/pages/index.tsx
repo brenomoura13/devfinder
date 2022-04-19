@@ -6,6 +6,7 @@ import Nav from '../components/Nav'
 import Partners from '../components/Home/Partners'
 import VideoSection from '../components/Home/VideoSection'
 import Considerations from '../components/Home/Considerations'
+import Map from '../components/Home/Map'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <VideoSection />
       <Partners />
       <Considerations />
+      <Map />
       <Footer />
     </>
   )

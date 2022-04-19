@@ -2,9 +2,9 @@
 export default {
   openGraph: {
     type: 'website',
-    locale: 'en_IE',
-    url: 'https://www.url.ie/',
-    site_name: 'SiteName',
+    locale: 'pt_BR',
+    url: 'https://www.devfinder.tech/',
+    site_name: 'DevFinder',
   },
   twitter: {
     handle: '@handle',

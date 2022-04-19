@@ -38,7 +38,7 @@ const Nav: NextPage = () => {
           </Link>
 
           <Link href="/">
-            <a className="navbar-item is-link is-light">
+            <a className="navbar-item is-link-light is-light">
               Sobre
             </a>
           </Link>
@@ -46,7 +46,7 @@ const Nav: NextPage = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons has-addons is-justify-content-center">
-              <Link href="/" passHref>
+              <Link href="/register" passHref>
               <button className="button is-primary has-text-light is-small">
                 <span className="icon is-small">
                 <FontAwesomeIcon icon={faArrowRightFromBracket} />

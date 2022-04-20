@@ -15,10 +15,10 @@ const Headline: NextPage = () => {
         <div className="hero-body">
           <div className="columns is-vcentered is-justify-content-flex-end">
             <div className="column is-full">
-              <h1 data-aos="fade-left" className="title is-size-1 has-text-white has-text-centered">
+              <h1 data-aos="fade-left" className="title is-size-1 is-size-2-mobile has-text-white has-text-centered">
                Procurando um desenvolvedor para o seu projeto ou quer ser notado por algum recrutador?
               </h1>
-              <h2 data-aos="fade-right" className="subtitle is-size-3 has-text-white has-text-centered has-margin-top-30">
+              <h2 data-aos="fade-right" className="subtitle is-size-3 is-size-4-mobile has-text-white has-text-centered has-margin-top-30">
                 Nos deixe te ajudar! Realize seu <b className="has-background-light has-padding-3 is-underlined">registro</b> para aumentar suas chances de sucesso.
               </h2>
               <div data-aos="fade-up" className="column">

@@ -10,10 +10,11 @@ const Nav: NextPage = () => {
   const [isBurger, setIsBurger] = useState(false);
   const isBurgerActive = isBurger ? "is-active" : "";
   const { width } = useWindowDimensions()
-  let isTouchDevice:boolean = width < 1023 && width != 0 ? true : false;
+  let isTouchDevice:boolean = width < 1023 || width === 0 ? true : false;
   let logo:string = isTouchDevice ? "df-logo.png" : "df-escrito.png"
   let logoWidth:number = isTouchDevice ? 320 : 1089
   let logoHeight:number = isTouchDevice ? 188 : 348
+  console.log(logoWidth, logoHeight)
   return (
     <nav className="navbar has-text-centered" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">

@@ -1,25 +1,18 @@
-import { faArrowRightFromBracket, faLock } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightFromBracket, faLock } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const Nav: NextPage = () => {
-  const [isBurger, setIsBurger] = useState(false);
-  const isBurgerActive = isBurger ? "is-active" : "";
-  const { width } = useWindowDimensions()
-  let isTouchDevice:boolean = width < 1023 || width === 0 ? true : false;
-  let logo:string = isTouchDevice ? "df-logo.png" : "df-escrito.png"
-  let logoWidth:number = isTouchDevice ? 320 : 1089
-  let logoHeight:number = isTouchDevice ? 188 : 348
+  const [isBurger, setIsBurger] = useState(false)
+  const isBurgerActive = isBurger ? "is-active" : ""
   return (
     <nav className="navbar has-text-centered" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
+      <div className="navbar-brand is-justify-content-space-between">
         <Link href="/">
           <a className="navbar-item is-justify-content-center">
-            <Image src={`/assets/images/${logo}`} width={logoWidth} height={logoHeight} alt="DevFinder Logo" />
+            <p className="is-size-3 has-text-weight-bold has-text-primary">DEVFINDER</p>
           </a>
         </Link>
         <a role="button" onClick={() => setIsBurger(!isBurger)} className={`navbar-burger ` + isBurgerActive} aria-label="menu" aria-expanded="false" data-target="navbar">
@@ -47,20 +40,20 @@ const Nav: NextPage = () => {
           <div className="navbar-item">
             <div className="buttons has-addons is-justify-content-center">
               <Link href="/register" passHref>
-              <button className="button is-primary has-text-light is-small">
-                <span className="icon is-small">
-                <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                </span>
-                <span> Registrar</span>
-              </button>
+                <button className="button is-primary has-text-light is-small">
+                  <span className="icon is-small">
+                  <FontAwesomeIcon icon={faArrowRightFromBracket} />
+                  </span>
+                  <span> Registrar</span>
+                </button>
               </Link>
-              <Link href="/" passHref>
-              <button className="button is-light has-text-primary is-small">
-                <span className="icon is-small">
-                <FontAwesomeIcon icon={faLock} />
-                </span>
-                <span> Login</span>
-              </button>
+              <Link href="/login" passHref>
+                <button className="button is-light has-text-primary is-small">
+                  <span className="icon is-small">
+                  <FontAwesomeIcon icon={faLock} />
+                  </span>
+                  <span> Login</span>
+                </button>
               </Link>
             </div>
           </div>

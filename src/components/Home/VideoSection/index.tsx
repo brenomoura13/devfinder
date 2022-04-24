@@ -15,7 +15,7 @@ const Footer: NextPage = () => {
         <div className="columns is-vcentered is-centered">
           <div className="column is-4">
             <div data-aos="flip-up" className="box has-background-primary">
-              <iframe width="100%" height="320" src="https://www.youtube.com/embed/DXTPjzFYs4k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe width="100%" height="320" src="https://www.youtube.com/embed/Sklc_fQBmcs" title="Video sobre Next JS" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
           <div className="column is-8">

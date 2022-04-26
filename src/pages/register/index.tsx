@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import Nav from '../components/Nav'
-import RegisterMainPage from '../components/Register/MainPage'
+import Nav from '../../components/Nav'
+import RegisterMainPage from '../../components/Register/MainPage'
 
 const Register: NextPage = () => {
   return (

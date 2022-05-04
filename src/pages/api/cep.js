@@ -9,16 +9,6 @@ export const getAdressByCep = async (cepNumber) => {
   }
   catch (error) {
     console.log(error)
-  }
-}
-
-
-export const getAdressComplete = async (cepNumber) => {
-  try {
-    const adress = await cep(cepNumber, { timeout: 5000 })
-    return adress
-  }
-  catch (error) {
-    console.log(error)
+    return {city: '', state: '', street: ''}
   }
 }

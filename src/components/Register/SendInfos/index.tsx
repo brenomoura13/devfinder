@@ -1,6 +1,10 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import { useState } from 'react';
 import { getAdressByCep } from '../../../pages/api/cep';
+import RegisterSteps from '../Steps';
 
 interface Props {
   email?: string | string[]
@@ -9,15 +13,15 @@ interface Props {
 const RegisterInformations: NextPage<Props> = props => {
   let email = props.email
   const [dataAdress, setData] = useState({city: '', state: '', street: ''})
-  console.log(dataAdress)
   return (
     <section className="is-white">
       <div className="container">
         <div className="columns">
           <div className="column is-half is-offset-one-quarter">
-            <h1 className="title is-2 is-size-4-mobile has-text-centered has-text-primary is-underlined has-margin-bottom-50">
+            <h1 className="title is-2 is-size-4-mobile has-text-centered has-text-primary is-underlined has-margin-bottom-50 has-text-primary">
               Complete seu registro
             </h1>
+            <RegisterSteps />
             <form className="form">              
               <div className="field">
                 <label className="label">Nome</label>
@@ -46,7 +50,7 @@ const RegisterInformations: NextPage<Props> = props => {
               <div className="field">
                 <label className="label">Telefone</label>
                 <div className="control">
-                  <input className="input is-primary" type="text" placeholder="Telefone" />
+                  <input className="input is-primary" type="tel" placeholder="Telefone" />
                 </div>
               </div>
               <div className="field">
@@ -85,6 +89,18 @@ const RegisterInformations: NextPage<Props> = props => {
                   <input className="input is-primary" type="text" placeholder="Link do perfil no LinkedIn" defaultValue="https://www.linkedin.com/in/" />
                 </div>
               </div>
+              <div className="control is-flex-mobile is-justify-content-center">
+                  <Link href={{
+                    pathname: "/register/continue"
+                  }} passHref >
+                    <button className="button is-primary has-margin-top-10">
+                      <span className="icon has-text-light">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </span>
+                      <span>Continuar</span>
+                    </button>
+                  </Link>
+                </div>
               </form>
             </div>
           </div>
